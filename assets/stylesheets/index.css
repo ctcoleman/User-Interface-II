@@ -105,7 +105,8 @@ a {
     font-size: 2rem;
 }
 .sampleProjects p {
-    flex: 2 2 10%;
+    margin: 20px;
+    flex: 1 1 10%;
     font-size: 2rem;
 }
 
@@ -115,8 +116,24 @@ a {
 footer {
     width: 100vw;
     background: -webkit-linear-gradient(rgba(0, 128, 111, 0.562), rgba(1, 167, 56, 0.616)); ;
+    display: flex;
+    justify-content: space-around;
 }
-
+footer p{
+    font-size: 3rem;
+    color: white;
+}
+footer .fa {
+    flex: 1 1 100%;
+    padding: 20px;
+    font-size: 3rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+footer .fa:hover {
+    opacity: 0.7;
+}
 
 /*
 ---- Navigation Styling ----
