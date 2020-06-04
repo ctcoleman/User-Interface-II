@@ -1,0 +1,133 @@
+/*
+---- CSS Reset ----
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+/*
+---- Basic Styling ----
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+---- Header Styling ----
+*/
+.header {
+    width: 100vw;
+    background-image: -webkit-linear-gradient(rgba(0, 128, 111, 0.562), rgba(1, 167, 56, 0.616));
+    border-bottom: 3px solid grey;
+}
+.header h1 {
+    font-size: 8rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+}
+.header .nav {
+    font-size: 2.5rem;
+}
+.nav a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+.header .nav a:hover {
+    color: black;
+    background: grey;
+    border: 1px solid black;
+}
+.header .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin: 5vh 0;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+}
+.header p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+/*
+---- Article Styling ----
+*/
+.welcome img {
+    width: 100vw;
+    height: 20vh;
+    object-fit: cover;
+}
+.welcome p {
+    font-size: 2rem;
+    text-align: center;
+    margin: 8vh;
+}
+
+/*
+---- Gallery Styling ----
+*/
+.projectsGallery {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.projectsGallery img {
+    flex: 1 1 100%;
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+    margin: 20px;
+}
+.projectsGallery a {
+    font-size: 2rem;
+}
+.sampleProjects p {
+    flex: 2 2 10%;
+    font-size: 2rem;
+}
+
+/*
+---- Footer Styling ----
+*/
+footer {
+    width: 100vw;
+    background: -webkit-linear-gradient(rgba(0, 128, 111, 0.562), rgba(1, 167, 56, 0.616)); ;
+}
+
+
+/*
+---- Navigation Styling ----
+*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a{
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+}
