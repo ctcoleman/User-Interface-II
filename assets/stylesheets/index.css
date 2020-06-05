@@ -23,7 +23,7 @@ input,select{vertical-align:middle}
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-    background: grey;
+    background: rgb(37, 53, 59);
     font-family: "Montaga";S
 }
 
@@ -91,13 +91,11 @@ a {
 /*
 ---- Gallery Styling ----
 */
-.projectsGallery {
+.sampleProjects {
     display: flex;
-    text-align: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    flex-flow: center wrap;
 }
-.projectsGallery img {
+.sampleProjects img {
     flex: 1 1 100%;
     width: 30vw;
     height: 30vh;
@@ -109,14 +107,20 @@ a {
     color: blue;
 }
 .sampleProjects p {
+    text-align: center;
     color:white;
-    margin: 20px;
-    flex: 1 1 10%;
+    margin: 30px;
+    flex: 1 1 35%;
     font-size: 2rem;
-    border: 2px solid black;
     padding-top: 40px;
-    border-radius:30px;
 }
+#myProjects {
+    color: rgb(106, 180, 199);
+}
+#myProjects:hover {
+    opacity: 0.5;
+}
+
 
 /*
 ---- Footer Styling ----
@@ -155,4 +159,43 @@ nav a{
     flex: 1;
     margin: 10px;
     padding: 10px;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerNav p {
+    flex: 1 1 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .footerNav .fa {
+        display: none;
+    }
+    .sampleProjects {
+        display: flex;
+        flex-direction: column;
+        flex-flow: center wrap;
+    }
+    .sampleProjects img {
+        flex: 1 1 100%;
+        width: 30vw;
+        height: 30vh;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .projectsGallery a {
+        font-size: 2rem;
+        color: blue;
+    }
+    .sampleProjects p {
+        text-align: center;
+        color:white;
+        margin: 30px;
+        flex: 1 1 35%;
+        font-size: 2rem;
+        padding-top: 40px;
+    }
 }
