@@ -236,13 +236,58 @@ nav a{
 }
 
 /*
+---- Projects Page Styling-----
+*/
+.myProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.aboutProjects p {
+    font-size: 3rem;
+    border: 3px solid grey;
+    text-align: center;
+    width: 60vw;
+    margin: 20vh 20vw 0;
+}
+.myProjects p {
+    text-align: center;
+    width: 30vw;
+}
+.myProjects .project {
+    margin: 20vh 10vw;
+    width: 40vw;
+}
+.myProjects img {
+    margin-top: 10vh;
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.myProjects .project p {
+    text-decoration: underline;
+    color: seashell;
+    font-family: fantasy;
+    font-size: 6rem;
+}
+/*
 ---- Responsive Design Styling/Media Quiries ----
 */
-@media screen and (max-width: 768px) { /*Tablet*/
+@media(max-width: 1020px) {
+    .myProjects p {
+        font-size: 1.8rem;
+    }
+    .myProjects .project p {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 820px) { /*Tablet*/
     /*Basic Styling Alt*/
     html {
     font-size: 50%;
     }
+    
     /*Header Alt*/
     .header .headerImage {
         height: 20vh;
@@ -272,6 +317,14 @@ nav a{
         display: flex;
         justify-content: space-evenly;
         align-items: baseline;
+    }
+
+    /* Projects Alt Styling */
+    .myProjects .project p {
+        font-size: 4rem;
+    }
+    .myProjects p {
+        font-size: 2rem;
     }
     
 @media screen and (max-width: 500px) { /*Phone*/
@@ -319,4 +372,18 @@ nav a{
         width: 90vw;
     }
 
+    /*Projects Alt*/
+    .myProjects {
+        flex-direction: column;
+    }
+    .myProjects .project {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .myProjects .project p { 
+        width: auto; 
+    }
+    .myProjects p {
+        width: 60vw;
+    }
 }
