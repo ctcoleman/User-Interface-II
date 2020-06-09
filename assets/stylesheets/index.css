@@ -1,0 +1,389 @@
+/*
+---- CSS Reset ----
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+/*
+---- Basic Styling ----
+*/
+html {
+    color: seashell;
+    font-size: 62.5%;
+    font-family: "Montaga";
+    box-sizing: border-box;
+    background: rgb(37, 53, 59);
+}
+
+h1,
+h2 {
+    color: rgb(172, 116, 44);
+    font-family: 'Montaga', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a,
+ul,
+li {
+    color: seashell;
+    font-size: 2rem;
+    text-decoration: none;
+}
+p {
+    color: seashell;
+    font-size: 2rem;
+}
+
+/*
+---- Header Styling ----
+*/
+.header {
+    width: 100vw;
+    background-image: -webkit-linear-gradient(rgba(1, 87, 168, 0.562), rgba(204, 18, 33, 0.575));
+    border-bottom: 3px solid grey;
+}
+.header .headerImage{
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+}
+.header h1 {
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3vh;
+    text-transform: uppercase;
+}
+.header .nav {
+    font-size: 2.5rem;
+}
+.nav a {
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 20px;
+}
+.header .nav a:hover {
+    opacity: 0.4;
+}
+.header .title {
+    margin: 5vh 0;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+}
+.header p {
+    font-size: 2rem;
+    font-family: "Architects Daughter";
+    text-align: center;
+    margin: 50px 0;
+}
+
+/*
+---- Home Page Styling ----
+*/
+.welcome p {
+    text-align: center;
+    margin: 8vh;
+}
+.sampleProjects {
+    display: flex;
+    align-items: center;
+    flex-flow: center wrap;
+}
+.sampleProjects img {
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+    margin: 1vh 1vw;
+    border: 2px solid rgb(175, 138, 138);
+    flex: 2 2 100%;
+}
+.projectsGallery a {
+    color: blue;
+}
+.sampleProjects p {
+    text-align: center;
+    margin: 5vh 5vw 0 2vw;
+    flex: 1 1 50%;
+}
+#myProjects {
+    color: rgb(106, 180, 199);
+}
+#myProjects:hover {
+    opacity: 0.5;
+}
+
+
+/*
+---- Footer Styling ----
+*/
+footer {
+    margin-top: 10vh;
+    width: 100vw;
+    background-image: -webkit-linear-gradient(rgba(1, 87, 168, 0.562), rgba(204, 18, 33, 0.575));
+    justify-content: space-around;
+}
+footer p {
+    font-size: 2.5rem;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 5vh;
+    text-decoration: underline;
+}
+footer .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .fa {
+    flex: 1 1 100%;
+    padding: 20px;
+    font-size: 3rem;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid seashell;
+    box-shadow: inset 2px 2px 4px 5px rgba(0,0,0,0.3);
+}
+footer a:hover{
+    opacity: 0.3;
+}
+
+/*
+---- Navigation Styling ----
+*/
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    margin: 5vh 5vw;
+    flex: 1;
+}
+.footerNav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*
+---- About Me Page Styling ----
+*/
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.aboutFamily {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 2 2 50%;
+}
+.aboutFamily p {
+    margin: 5vh 5vw;
+}
+.aboutFamily img {
+    margin: 5vh 5vw;
+}
+.aboutFamily .familyHotTub {
+    width: 60vw;
+    height: 30vh;
+    object-fit: cover;
+}
+.aboutFamily .smallerImgs {
+    width: 30vw;
+    height: 50vh;
+    object-fit: cover;
+}
+.allAboutMe {
+    text-align: center;
+    flex: 1 1 50%;
+}
+.allAboutMe .quote {
+    margin-top: 10vh;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+
+/*
+---- Contact Me Page ----
+*/
+.pageDescription p{
+    text-align: center;
+    margin: 10vh 10vw;
+}
+.form {
+    text-align: center;
+    width: 50vw;
+    margin: 10vh 25vw;
+}
+.form ul {
+    list-style-type: none;
+    border: 5px solid grey;
+}
+
+/*
+---- Projects Page Styling-----
+*/
+.myProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.aboutProjects p {
+    font-size: 3rem;
+    border: 3px solid grey;
+    text-align: center;
+    width: 60vw;
+    margin: 20vh 20vw 0;
+}
+.myProjects p {
+    text-align: center;
+    width: 30vw;
+}
+.myProjects .project {
+    margin: 20vh 10vw;
+    width: 40vw;
+}
+.myProjects img {
+    margin-top: 10vh;
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+}
+.myProjects .project p {
+    text-decoration: underline;
+    color: seashell;
+    font-family: fantasy;
+    font-size: 6rem;
+}
+/*
+---- Responsive Design Styling/Media Quiries ----
+*/
+@media(max-width: 1020px) {
+    .myProjects p {
+        font-size: 1.8rem;
+    }
+    .myProjects .project p {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 800px) { /*Tablet*/
+    /*Basic Styling Alt*/
+    html {
+    font-size: 50%;
+    }
+    
+    /*Header Alt*/
+    .header .headerImage {
+        height: 20vh;
+    }
+    .header .headerImage2 {
+        display: none;
+    }
+    /*Home Page Alt*/
+    .sampleProjects {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .sampleProjects img {
+        width: 20vw;
+    }
+    /*About Me Alt */
+    .mainContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutFamily .smallerImgs {
+        width: 30vw
+    }
+    .aboutFamily {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+
+    /* Projects Alt Styling */
+    .myProjects .project p {
+        font-size: 4rem;
+    }
+    .myProjects p {
+        font-size: 2rem;
+    }
+    
+@media screen and (max-width: 500px) { /*Phone*/
+    html {
+        font-size: 45%;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+
+    /*Header Alt*/
+    .header .headerImage {
+        height: 20vh;
+    }
+    .header .headerImage2 {
+        display: none;
+    }
+    
+    /*Home Page Alt*/
+    .sampleProjects .projectsGallery{
+        order: 2;
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sampleProjects img {
+        width: 50vw;
+    }
+
+    /*About Page Alt*/
+    .mainContent {
+        flex-direction: column;
+    }
+    .mainContent .aboutFamily {
+        display: flex;
+        justify-content: center;
+    }
+    .mainContent .aboutFamily img {
+        order: 1;
+        width: 60vw;
+    }
+    .allAboutMe {
+        order: 2;
+        width: 90vw;
+    }
+
+    /*Projects Alt*/
+    .myProjects {
+        flex-direction: column;
+    }
+    .myProjects .project {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .myProjects .project p { 
+        width: auto; 
+    }
+    .myProjects p {
+        width: 60vw;
+    }
+}
